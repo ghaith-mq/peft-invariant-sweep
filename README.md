@@ -29,7 +29,7 @@ Property-based checks for [🤗 PEFT](https://github.com/huggingface/peft) that 
 
 - **Single adapter:** 109 supported method × layer combinations. All merge, unload, disable, save/load and half-precision invariants hold, apart from documented limitations: Lily and OSF don't support merging, and OSF on non-Linear layers is already reported in huggingface/peft#3986.
 - **Multi-adapter:** 53 supported combinations. set_adapter, delete_adapter and multi-adapter save/load all pass (53/53).
-- **Bug found:** mixed adapter batches pass for only **LoRA, RoAd and GLoRA**. For every other method, `adapter_names` is **silently ignored** and the whole batch runs through the active adapter, with no error or warning. Minimal repro: [`repro_adapter_names_ignored.py`](repro_adapter_names_ignored.py).
+- **Bug found:** mixed adapter batches pass for only **LoRA, RoAd and GLoRA**. For every other method, `adapter_names` is **silently ignored** and the whole batch runs through the active adapter, with no error or warning. Minimal repro: [`repro_adapter_names_ignored.py`](repro_adapter_names_ignored.py). Reported upstream as [huggingface/peft#4002](https://github.com/huggingface/peft/issues/4002).
 
   *Root cause:* `PeftModel._enable_peft_forward_hooks` only delegates to the tuner when the tuner defines that hook. Otherwise `adapter_names` is stripped from the kwargs and never reaches any layer.
 
