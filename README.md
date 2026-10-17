@@ -15,6 +15,7 @@ Property-based checks for [🤗 PEFT](https://github.com/huggingface/peft) that 
 | disable_adapter | gives the base output, then re-enables cleanly |
 | save / load | a `save_pretrained` → `from_pretrained` round trip preserves the output |
 | bf16 / fp16 | half-precision forward keeps the dtype, and merging matches the unmerged output |
+| cast after wrap | applying the adapter in fp32 and then calling `model.to(bf16/fp16)` still runs and roughly matches the fp32 output |
 
 **`multi_adapter_sweep.py`**: two adapters on the same model:
 
@@ -32,6 +33,8 @@ Property-based checks for [🤗 PEFT](https://github.com/huggingface/peft) that 
 - **Bug found:** mixed adapter batches pass for only **LoRA, RoAd and GLoRA**. For every other method, `adapter_names` is **silently ignored** and the whole batch runs through the active adapter, with no error or warning. Minimal repro: [`repro_adapter_names_ignored.py`](repro_adapter_names_ignored.py). Reported upstream as [huggingface/peft#4002](https://github.com/huggingface/peft/issues/4002).
 
   *Root cause:* `PeftModel._enable_peft_forward_hooks` only delegates to the tuner when the tuner defines that hook. Otherwise `adapter_names` is stripped from the kwargs and never reaches any layer.
+
+- **Bug found:** AdaMSS crashes on forward after the PEFT model's dtype is cast (e.g. `model.to(torch.bfloat16)`), because the layer caches the base weight dtype at init. It is the only method affected out of 118 method/model combinations. Reported upstream as [huggingface/peft#4003](https://github.com/huggingface/peft/issues/4003).
 
 Raw per-combination results are in [`results/`](results/).
 

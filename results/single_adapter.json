@@ -12,7 +12,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "AdaLoraConfig",
@@ -27,7 +29,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "AdaLoraConfig",
@@ -60,7 +64,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "AdaLoraConfig",
@@ -75,7 +81,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "AdaLoraConfig",
@@ -108,7 +116,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "CRASH RuntimeError: mat1 and mat2 must have the same dtype, but got Float and BFloat16",
+  "cast_to_fp16": "CRASH RuntimeError: mat1 and mat2 must have the same dtype, but got Float and Half"
  },
  {
   "method": "AdamssConfig",
@@ -177,7 +187,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "BOFTConfig",
@@ -246,7 +258,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "BeftConfig",
@@ -315,7 +329,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "C3AConfig",
@@ -384,7 +400,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "DeftConfig",
@@ -399,7 +417,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "DeftConfig",
@@ -462,7 +482,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "DeloraConfig",
@@ -531,7 +553,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "FourierFTConfig",
@@ -600,7 +624,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "FrodConfig",
@@ -615,7 +641,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "FrodConfig",
@@ -678,7 +706,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "GloraConfig",
@@ -747,7 +777,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "GraloraConfig",
@@ -816,7 +848,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HRAConfig",
@@ -855,7 +889,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HRAConfig",
@@ -870,7 +906,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HRAConfig",
@@ -903,7 +941,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -918,7 +958,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -933,7 +975,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -948,7 +992,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -963,7 +1009,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -978,7 +1026,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -993,7 +1043,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -1008,7 +1060,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -1023,7 +1077,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "HiraConfig",
@@ -1044,7 +1100,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "IA3Config",
@@ -1059,7 +1117,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "IA3Config",
@@ -1092,7 +1152,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "IA3Config",
@@ -1107,7 +1169,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "IA3Config",
@@ -1122,7 +1186,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "IA3Config",
@@ -1137,7 +1203,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "IA3Config",
@@ -1158,7 +1226,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1173,7 +1243,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1188,7 +1260,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1203,7 +1277,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1218,7 +1294,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1233,7 +1311,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1248,7 +1328,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1263,7 +1345,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1278,7 +1362,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LNTuningConfig",
@@ -1293,7 +1379,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LilyConfig",
@@ -1308,7 +1396,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "CRASH NotImplementedError: This method is not supported for Lily.",
-  "fp16": "CRASH NotImplementedError: This method is not supported for Lily."
+  "fp16": "CRASH NotImplementedError: This method is not supported for Lily.",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LilyConfig",
@@ -1377,7 +1467,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoHaConfig",
@@ -1404,7 +1496,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoHaConfig",
@@ -1419,7 +1513,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoHaConfig",
@@ -1434,7 +1530,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoHaConfig",
@@ -1449,7 +1547,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoHaConfig",
@@ -1482,7 +1582,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoKrConfig",
@@ -1509,7 +1611,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoKrConfig",
@@ -1524,7 +1628,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoKrConfig",
@@ -1539,7 +1645,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoKrConfig",
@@ -1554,7 +1662,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoKrConfig",
@@ -1587,7 +1697,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1602,7 +1714,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1617,7 +1731,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1632,7 +1748,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1647,7 +1765,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1662,7 +1782,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1677,7 +1799,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1692,7 +1816,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1707,7 +1833,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "LoraConfig",
@@ -1722,7 +1850,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "MissConfig",
@@ -1737,7 +1867,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "MissConfig",
@@ -1806,7 +1938,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OFTConfig",
@@ -1827,7 +1961,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OFTConfig",
@@ -1854,7 +1990,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OFTConfig",
@@ -1869,7 +2007,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OFTConfig",
@@ -1902,7 +2042,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -1917,7 +2059,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -1932,7 +2076,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -1947,7 +2093,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -1962,7 +2110,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -1977,7 +2127,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -1992,7 +2144,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -2007,7 +2161,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -2022,7 +2178,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "OSFConfig",
@@ -2037,7 +2195,9 @@
   "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "PeanutConfig",
@@ -2052,7 +2212,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "PeanutConfig",
@@ -2121,7 +2283,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "PsoftConfig",
@@ -2190,7 +2354,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "PveraConfig",
@@ -2205,7 +2371,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "PveraConfig",
@@ -2268,7 +2436,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "RandLoraConfig",
@@ -2283,7 +2453,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "RandLoraConfig",
@@ -2346,7 +2518,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "RoadConfig",
@@ -2415,7 +2589,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "ShiraConfig",
@@ -2484,7 +2660,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "SupertuningConfig",
@@ -2553,7 +2731,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "TinyLoraConfig",
@@ -2568,7 +2748,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "TinyLoraConfig",
@@ -2583,7 +2765,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "TinyLoraConfig",
@@ -2640,7 +2824,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "TrainableTokensConfig",
@@ -2661,7 +2847,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "TrainableTokensConfig",
@@ -2718,7 +2906,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "UniLoraConfig",
@@ -2733,7 +2923,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "UniLoraConfig",
@@ -2796,7 +2988,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "VBLoRAConfig",
@@ -2811,7 +3005,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "VBLoRAConfig",
@@ -2874,7 +3070,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "VeraConfig",
@@ -2889,7 +3087,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "VeraConfig",
@@ -2952,7 +3152,9 @@
   "disable": "ok",
   "save_load": "ok",
   "bf16": "ok",
-  "fp16": "ok"
+  "fp16": "ok",
+  "cast_to_bf16": "ok",
+  "cast_to_fp16": "ok"
  },
  {
   "method": "WaveFTConfig",

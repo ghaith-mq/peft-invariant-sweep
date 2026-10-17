@@ -9,6 +9,7 @@ For every (method, model) pair where wrapping succeeds, check:
   save_load       save_pretrained / from_pretrained round trip preserves output
   half_forward    forward in bf16/fp16 runs and returns the base dtype
   half_merge      merge in bf16 roughly matches unmerged bf16 output
+  cast_after_wrap wrapping in fp32 then model.to(bf16/fp16) still runs and roughly matches fp32 output
 
 Combos already in tests/test_custom_models.py TEST_CASES are marked so we can focus on untested ones.
 """
@@ -188,6 +189,20 @@ def run_one(cls, kw, mid):
 
         return inner
 
+    def cast_after_wrap(dtype):
+        # wrap in fp32, then cast the whole PEFT model, as users do for inference
+        def inner():
+            m = copy.deepcopy(model).to(dtype)
+            if hasattr(m.base_model.model, "dtype"):
+                m.base_model.model.dtype = dtype
+            yh = fwd(m, x)
+            if yh.dtype != dtype:
+                return f"DTYPE {yh.dtype}"
+            ok, d = close(yh, y, atol=5e-2, rtol=5e-2)
+            return "ok" if ok else f"MISMATCH diff={d:.2e}"
+
+        return inner
+
     check("merge", merge)
     check("merge_unmerge", merge_unmerge)
     check("merge_and_unload", merge_and_unload)
@@ -196,6 +211,8 @@ def run_one(cls, kw, mid):
     check("save_load", save_load)
     check("bf16", half(torch.bfloat16))
     check("fp16", half(torch.float16))
+    check("cast_to_bf16", cast_after_wrap(torch.bfloat16))
+    check("cast_to_fp16", cast_after_wrap(torch.float16))
     return res
 
 
