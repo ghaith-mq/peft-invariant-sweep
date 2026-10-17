@@ -1,0 +1,898 @@
+[
+ {
+  "method": "AdaLoraConfig",
+  "model": "MLP",
+  "unsupported": "ValueError: AdaLoraModel supports only 1 trainable adapter. When using multiple adapters, set inference_mode to "
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "EmbConv1D",
+  "unsupported": "ValueError: AdaLoraModel supports only 1 trainable adapter. When using multiple adapters, set inference_mode to "
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: AdaLoraModel supports only 1 trainable adapter. When using multiple adapters, set inference_mode to "
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.97e-02",
+  "mixed_bf16": "CRASH RuntimeError: mat1 and mat2 must have the same dtype, but got Float and BFloat16",
+  "mixed_fp16": "CRASH RuntimeError: mat1 and mat2 must have the same dtype, but got Float and Half",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `to"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.45e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` and `torch.nn.C"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: Convolutional kernel dimension (45) must be divisible by boft_block_size (2)!"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=8.18e-02",
+  "mixed_bf16": "MISMATCH diff=8.20e-02",
+  "mixed_fp16": "MISMATCH diff=8.15e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "BeftConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `to"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=6.41e-03",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "C3AConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `to"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.46e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.08e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `to"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.59e-01",
+  "mixed_bf16": "MISMATCH diff=1.64e-01",
+  "mixed_fp16": "MISMATCH diff=1.59e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `to"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=7.76e-02",
+  "mixed_bf16": "MISMATCH diff=7.42e-02",
+  "mixed_fp16": "MISMATCH diff=7.76e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "EmbConv1D",
+  "unsupported": "ValueError: `n_frequency` should be less than or equal to the product of the input and output dimensions but the"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the"
+ },
+ {
+  "method": "FrodConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.78e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "FrodConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.94e-01",
+  "mixed_bf16": "MISMATCH diff=2.97e-01",
+  "mixed_fp16": "MISMATCH diff=2.94e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "FrodConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "GloraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "ok",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "GloraConfig",
+  "model": "EmbConv1D",
+  "unsupported": "ValueError: Target module Conv1D(nf=1, nx=5) is not a plain torch.nn.Linear (after unwrapping); GLoRA does not s"
+ },
+ {
+  "method": "GloraConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not a plain torch.nn.Linear (after"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=4.39e-01",
+  "mixed_bf16": "MISMATCH diff=4.45e-01",
+  "mixed_fp16": "MISMATCH diff=4.40e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "EmbConv1D",
+  "unsupported": "ValueError: in_features should be divisible by gralora_k, but got 5 and 2"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.60e-01",
+  "mixed_bf16": "MISMATCH diff=1.56e-01",
+  "mixed_fp16": "MISMATCH diff=1.60e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` and `torch.nn.C"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "Conv2d",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.49e-01",
+  "mixed_bf16": "MISMATCH diff=2.42e-01",
+  "mixed_fp16": "MISMATCH diff=2.49e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=8.82e-01",
+  "mixed_bf16": "MISMATCH diff=8.83e-01",
+  "mixed_fp16": "MISMATCH diff=8.81e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.00e-01",
+  "mixed_bf16": "MISMATCH diff=1.99e-01",
+  "mixed_fp16": "MISMATCH diff=1.99e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "Conv2d",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.34e+00",
+  "mixed_bf16": "MISMATCH diff=1.34e+00",
+  "mixed_fp16": "MISMATCH diff=1.34e+00",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=6.95e-02",
+  "mixed_bf16": "MISMATCH diff=7.42e-02",
+  "mixed_fp16": "MISMATCH diff=6.93e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.90e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "Conv2d",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=3.48e-01",
+  "mixed_bf16": "MISMATCH diff=3.44e-01",
+  "mixed_fp16": "MISMATCH diff=3.48e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=6.36e-02",
+  "mixed_bf16": "MISMATCH diff=6.64e-02",
+  "mixed_fp16": "MISMATCH diff=6.40e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=4.86e-02",
+  "mixed_bf16": "MISMATCH diff=5.08e-02",
+  "mixed_fp16": "MISMATCH diff=4.88e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "Conv2d",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.27e-01",
+  "mixed_bf16": "MISMATCH diff=1.21e-01",
+  "mixed_fp16": "MISMATCH diff=1.27e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LilyConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.09e-01",
+  "mixed_bf16": "MISMATCH diff=1.05e-01",
+  "mixed_fp16": "MISMATCH diff=1.09e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LilyConfig",
+  "model": "EmbConv1D",
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'transformers.pytorch_utils.Conv1D'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "Conv2d",
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.conv.Conv2d'> yet."
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=3.84e-02",
+  "mixed_bf16": "MISMATCH diff=3.91e-02",
+  "mixed_fp16": "MISMATCH diff=3.91e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module of type <class 'transformers.pytorch_utils.Conv1D'> not supported, currently only adap"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "Conv2d",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=6.77e-03",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=8.37e-03",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module of type <class 'transformers.pytorch_utils.Conv1D'> not supported, currently only adap"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "Conv2d",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.22e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "ok",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "ok",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "Conv2d",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "ok",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "MissConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.18e-01",
+  "mixed_bf16": "MISMATCH diff=1.13e-01",
+  "mixed_fp16": "MISMATCH diff=1.18e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "MissConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` (optionally qua"
+ },
+ {
+  "method": "MissConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `to"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.19e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear`, `torch.nn.Conv"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "Conv2d",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.06e-01",
+  "mixed_bf16": "MISMATCH diff=2.03e-01",
+  "mixed_fp16": "MISMATCH diff=2.07e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.88e+00",
+  "mixed_bf16": "MISMATCH diff=1.86e+00",
+  "mixed_fp16": "MISMATCH diff=1.88e+00",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "EmbConv1D",
+  "harness_error": "ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model."
+ },
+ {
+  "method": "OSFConfig",
+  "model": "Conv2d",
+  "harness_error": "ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.00e-01",
+  "mixed_bf16": "MISMATCH diff=1.95e-01",
+  "mixed_fp16": "MISMATCH diff=2.00e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "EmbConv1D",
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'transformers.pytorch_utils.Conv1D'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "Conv2d",
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.conv.Conv2d'> yet."
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=6.94e-02",
+  "mixed_bf16": "MISMATCH diff=6.25e-02",
+  "mixed_fp16": "MISMATCH diff=6.93e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "EmbConv1D",
+  "unsupported": "ValueError: Target module Conv1D(nf=1, nx=5) is not supported by minimal PSOFT. Only torch.nn.Linear is supporte"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported by minimal PSOFT. On"
+ },
+ {
+  "method": "PveraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=7.22e-01",
+  "mixed_bf16": "MISMATCH diff=7.19e-01",
+  "mixed_fp16": "MISMATCH diff=7.22e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "PveraConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.30e+00",
+  "mixed_bf16": "MISMATCH diff=1.30e+00",
+  "mixed_fp16": "MISMATCH diff=1.30e+00",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "PveraConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=3.77e-02",
+  "mixed_bf16": "MISMATCH diff=3.91e-02",
+  "mixed_fp16": "MISMATCH diff=3.76e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=3.59e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RoadConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "ok",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "EmbConv1D",
+  "unsupported": "ValueError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only the following modules are support"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=7.02e-01",
+  "mixed_bf16": "MISMATCH diff=7.03e-01",
+  "mixed_fp16": "MISMATCH diff=7.02e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only the following modules are support"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=6.01e-01",
+  "mixed_bf16": "MISMATCH diff=6.09e-01",
+  "mixed_fp16": "MISMATCH diff=6.01e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "EmbConv1D",
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `to"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.17e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "EmbConv1D",
+  "harness_error": "RuntimeError: mat1 and mat2 shapes cannot be multiplied (90x5 and 1x1)"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "Conv2d",
+  "unsupported": "KeyError: 'conv2d'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=3.17e-01",
+  "mixed_bf16": "MISMATCH diff=3.20e-01",
+  "mixed_fp16": "MISMATCH diff=3.17e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "EmbConv1D",
+  "harness_error": "AttributeError: 'Conv1D' object has no attribute 'in_features'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "Conv2d",
+  "harness_error": "AttributeError: 'Conv2d' object has no attribute 'in_features'"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=2.07e+00",
+  "mixed_bf16": "MISMATCH diff=2.05e+00",
+  "mixed_fp16": "MISMATCH diff=2.06e+00",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=4.41e+00",
+  "mixed_bf16": "MISMATCH diff=4.40e+00",
+  "mixed_fp16": "MISMATCH diff=4.41e+00",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=4.43e-02",
+  "mixed_bf16": "MISMATCH diff=3.91e-02",
+  "mixed_fp16": "MISMATCH diff=4.39e-02",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.14e-02",
+  "mixed_bf16": "ok",
+  "mixed_fp16": "ok",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the"
+ },
+ {
+  "method": "VeraConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=6.89e-01",
+  "mixed_bf16": "MISMATCH diff=6.88e-01",
+  "mixed_fp16": "MISMATCH diff=6.89e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "VeraConfig",
+  "model": "EmbConv1D",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=1.87e+00",
+  "mixed_bf16": "MISMATCH diff=1.88e+00",
+  "mixed_fp16": "MISMATCH diff=1.87e+00",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "VeraConfig",
+  "model": "Conv2d",
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "MLP",
+  "adapters_differ": "ok",
+  "set_adapter_grad": "ok",
+  "delete_active": "ok",
+  "delete_inactive": "ok",
+  "mixed_fp32": "MISMATCH diff=4.66e-01",
+  "mixed_bf16": "MISMATCH diff=4.65e-01",
+  "mixed_fp16": "MISMATCH diff=4.66e-01",
+  "save_load_multi": "ok"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "EmbConv1D",
+  "unsupported": "ValueError: `n_frequency` should be less than or equal to the product of the input and output dimensions but the"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "Conv2d",
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the"
+ }
+]

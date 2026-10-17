@@ -1,0 +1,3011 @@
+[
+ {
+  "method": "AdaLoraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "diff=1.55e+00",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "init_identity": "diff=4.42e+00",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear`, `Conv1D`, and `torch.nn.Conv2d` are"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear`, `Conv1D`,"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear`, `Conv1D"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "init_identity": "diff=6.56e+00",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "init_identity": "diff=1.38e-01",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "AdaLoraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is support"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is suppo"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "AdamssConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "MLP",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` and `torch.nn.Conv2d` (optionally q"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` and `torch.nn.Conv2d` (optionally qu"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` and `torch"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` and `tor"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "unsupported": "ValueError: Convolutional kernel dimension (45) must be divisible by boft_block_size (2)!"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Convolutional kernel dimension (1) must be divisible by boft_block_size (2)!"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "BOFTConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "BeftConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "BeftConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is support"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is suppo"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "BeftConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "C3AConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "C3AConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is support"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is suppo"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "C3AConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` and `transformers.pytorch_utils.Conv"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` and `trans"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` and `tra"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` and `"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` and `"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "DeftConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is support"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is suppo"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "DeloraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "ValueError: `n_frequency` should be less than or equal to the product of the input and output dimensions but the value passed is 10 "
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear`"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are su"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are "
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "FourierFTConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "FrodConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "FrodConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "FrodConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "FrodConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "FrodConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "FrodConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "FrodConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "FrodConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "FrodConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "FrodConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layer types compatible with FRoD were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "GloraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "GloraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1D(nf=1, nx=5) is not a plain torch.nn.Linear (after unwrapping); GLoRA does not support this layer ty"
+ },
+ {
+  "method": "GloraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Embedding(100, 5) is not a plain torch.nn.Linear (after unwrapping); GLoRA does not support this layer typ"
+ },
+ {
+  "method": "GloraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not a plain torch.nn.Linear (after unwrapping); GLoRA does "
+ },
+ {
+  "method": "GloraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not a plain torch.nn.Linear (after unwrapping); GLoRA doe"
+ },
+ {
+  "method": "GloraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not a plain torch.nn.Linear (after unwrapping); GLoRA "
+ },
+ {
+  "method": "GloraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not a plain torch.nn.Linear (after unwrapping); GLoRA "
+ },
+ {
+  "method": "GloraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not a plain torch.nn.Linear (after unwrapping); "
+ },
+ {
+  "method": "GloraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not a plain torch.nn.Linear (after unwrapping); "
+ },
+ {
+  "method": "GloraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "unsupported": "ValueError: in_features should be divisible by gralora_k, but got 5 and 2"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear`"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are su"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are "
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "GraloraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` and `torch.nn.Conv2d` are supported"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` and `torch.nn.Conv2d` are supported."
+ },
+ {
+  "method": "HRAConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` and `torch"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` and `tor"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "HRAConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "Conv1d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "Conv3d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "HiraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "IA3Config",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear`, `torch.nn.Conv2d`, and `Conv1D` are"
+ },
+ {
+  "method": "IA3Config",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear`, `torch.nn"
+ },
+ {
+  "method": "IA3Config",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear`, `torch."
+ },
+ {
+  "method": "IA3Config",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "Conv3d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "IA3Config",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "MLP",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LNTuningConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "CRASH AttributeError: 'MultiheadAttention' object has no attribute 'weight'",
+  "unload": "CRASH AttributeError: 'MultiheadAttention' object has no attribute 'weight'",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LilyConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "CRASH NotImplementedError: This method is not supported for Lily.",
+  "merge_unmerge": "CRASH NotImplementedError: This method is not supported for Lily.",
+  "merge_and_unload": "CRASH NotImplementedError: This method is not supported for Lily.",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "CRASH NotImplementedError: This method is not supported for Lily.",
+  "fp16": "CRASH NotImplementedError: This method is not supported for Lily."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'transformers.pytorch_utils.Conv1D'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.sparse.Embedding'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.conv.Conv1d'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.conv.Conv1d'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.conv.Conv2d'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.conv.Conv2d'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.conv.Conv3d'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.conv.Conv3d'> yet."
+ },
+ {
+  "method": "LilyConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: Lily does not support target modules of type <class 'torch.nn.modules.activation.MultiheadAttention'> yet."
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'transformers.pytorch_utils.Conv1D'> not supported, currently only adapters for Conv2d, Con"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'torch.nn.modules.sparse.Embedding'> not supported, currently only adapters for Conv2d, Con"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "Conv1d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'torch.nn.modules.conv.Conv3d'> not supported, currently only adapters for Conv2d, Conv1d, "
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'torch.nn.modules.conv.Conv3d'> not supported, currently only adapters for Conv2d, Conv1d, "
+ },
+ {
+  "method": "LoHaConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'torch.nn.modules.activation.MultiheadAttention'> not supported, currently only adapters fo"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'transformers.pytorch_utils.Conv1D'> not supported, currently only adapters for Conv2d, Con"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'torch.nn.modules.sparse.Embedding'> not supported, currently only adapters for Conv2d, Con"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "Conv1d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'torch.nn.modules.conv.Conv3d'> not supported, currently only adapters for Conv2d, Conv1d, "
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'torch.nn.modules.conv.Conv3d'> not supported, currently only adapters for Conv2d, Conv1d, "
+ },
+ {
+  "method": "LoKrConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module of type <class 'torch.nn.modules.activation.MultiheadAttention'> not supported, currently only adapters fo"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "Conv1d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "Conv3d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "LoraConfig",
+  "model": "MHA",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "MissConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "MissConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` (optionally quantized) is supported"
+ },
+ {
+  "method": "MissConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` (optionally quantized) is supported."
+ },
+ {
+  "method": "MissConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` (optionall"
+ },
+ {
+  "method": "MissConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` (optiona"
+ },
+ {
+  "method": "MissConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` (opti"
+ },
+ {
+  "method": "MissConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` (opti"
+ },
+ {
+  "method": "MissConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "MissConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "MissConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear`, `torch.nn.Conv2d`, `torch.nn.Embed"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear`, `torch.nn"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear`, `torch."
+ },
+ {
+  "method": "OFTConfig",
+  "model": "Conv2d",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "OFTConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "MLP",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "OSFConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "NO EFFECT",
+  "merge": "ok",
+  "merge_unmerge": "CRASH NotImplementedError: OSF models do not support unmerging",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "CRASH ValueError: No adapter layers found in the model, please ensure that it's a PEFT model or that you have PEFT adapters injected in the model.",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'transformers.pytorch_utils.Conv1D'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.sparse.Embedding'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.conv.Conv1d'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.conv.Conv1d'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.conv.Conv2d'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.conv.Conv2d'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.conv.Conv3d'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.conv.Conv3d'> yet."
+ },
+ {
+  "method": "PeanutConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "NotImplementedError: PEANuT does not support target modules of type <class 'torch.nn.modules.activation.MultiheadAttention'> yet."
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1D(nf=1, nx=5) is not supported by minimal PSOFT. Only torch.nn.Linear is supported."
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Embedding(100, 5) is not supported by minimal PSOFT. Only torch.nn.Linear is supported."
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported by minimal PSOFT. Only torch.nn.Linear is sup"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported by minimal PSOFT. Only torch.nn.Linear is s"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported by minimal PSOFT. Only torch.nn.Linear i"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported by minimal PSOFT. Only torch.nn.Linear i"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported by minimal PSOFT. Only torch.nn.Li"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported by minimal PSOFT. Only torch.nn.Li"
+ },
+ {
+  "method": "PsoftConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "PveraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "PveraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "PveraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "PveraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "PveraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "PveraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "PveraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "PveraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "PveraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "PveraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with PVeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RandLoraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with RandLora were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "RoadConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Embedding(100, 5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear`"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are su"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are "
+ },
+ {
+  "method": "RoadConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "RoadConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear`"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are su"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are "
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "ShiraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1D(nf=1, nx=5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only `torch.nn.Linear` is supported."
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is support"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only `torch.nn.Linear` is suppo"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only `torch.nn.Linear` is su"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only `torch.nn.Linear`"
+ },
+ {
+  "method": "SupertuningConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "KeyError: 'conv1d'"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "KeyError: 'conv1d'"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "KeyError: 'conv2d'"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "KeyError: 'conv2d'"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "KeyError: 'conv3d'"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "KeyError: 'conv3d'"
+ },
+ {
+  "method": "TinyLoraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "KeyError: 'mha'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "MLP",
+  "in_test_suite": false,
+  "init_identity": "diff=4.78e-01",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "wrap_crash": "AttributeError: 'Conv1D' object has no attribute 'in_features'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": true,
+  "init_identity": "diff=7.12e-03",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "wrap_crash": "AttributeError: 'Conv1d' object has no attribute 'in_features'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "wrap_crash": "AttributeError: 'Conv1d' object has no attribute 'in_features'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "wrap_crash": "AttributeError: 'Conv2d' object has no attribute 'in_features'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "wrap_crash": "AttributeError: 'Conv2d' object has no attribute 'in_features'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "wrap_crash": "AttributeError: 'Conv3d' object has no attribute 'in_features'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "wrap_crash": "AttributeError: 'Conv3d' object has no attribute 'in_features'"
+ },
+ {
+  "method": "TrainableTokensConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "wrap_crash": "AttributeError: 'MultiheadAttention' object has no attribute 'weight'"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "diff=4.13e-04",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear`"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are su"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are "
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "UniLoraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "diff=2.86e-04",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear`"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are su"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are "
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "VBLoRAConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ },
+ {
+  "method": "VeraConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "VeraConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "VeraConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "VeraConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "VeraConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "VeraConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "VeraConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "VeraConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "VeraConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "VeraConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "ValueError: No layers types compatible with VeRA were found. Please check `peft_config.target_modules`."
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "MLP",
+  "in_test_suite": true,
+  "init_identity": "ok",
+  "adapter_effective": "ok",
+  "merge": "ok",
+  "merge_unmerge": "ok",
+  "merge_and_unload": "ok",
+  "unload": "ok",
+  "disable": "ok",
+  "save_load": "ok",
+  "bf16": "ok",
+  "fp16": "ok"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "EmbConv1D",
+  "in_test_suite": false,
+  "unsupported": "ValueError: `n_frequency` should be less than or equal to the product of the input and output dimensions but the value passed is 8 a"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "EmbConv1D-emb",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Embedding(100, 5) is not supported. Currently, only the following modules are supported: `torch.nn.Linear`"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "Conv1d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(1, 1, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are su"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "Conv1dBigger",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv1d(64, 16, kernel_size=(2,), stride=(1,)) is not supported. Currently, only the following modules are "
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "Conv2d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(5, 10, kernel_size=(3, 3), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "Conv2d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv2d(1, 10, kernel_size=(1, 1), stride=(1, 1)) is not supported. Currently, only the following modules a"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "Conv3d",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(3, 3, 3), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "Conv3d1x1",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module Conv3d(5, 10, kernel_size=(1, 1, 1), stride=(1, 1, 1)) is not supported. Currently, only the following mod"
+ },
+ {
+  "method": "WaveFTConfig",
+  "model": "MHA",
+  "in_test_suite": false,
+  "unsupported": "TypeError: Target module MultiheadAttention(\n  (out_proj): NonDynamicallyQuantizableLinear(in_features=10, out_features=10, bias=Tr"
+ }
+]
